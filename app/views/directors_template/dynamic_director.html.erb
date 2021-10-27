@@ -1,0 +1,51 @@
+
+
+<h1>
+  Director #<%=@id%> details
+</h1>
+
+<a href="/directors" class="btn btn-block btn-outline-secondary">
+  Go back
+</a>
+
+<hr>
+
+<dl>
+  <dt>
+    Name
+  </dt>
+  <dd>
+  <%=@name%>  </dd>
+
+  <dt>
+    Dob
+  </dt>
+  <dd>
+<%=@dob%>  </dd>
+
+  <dt>
+    Bio
+  </dt>
+  <dd>
+  <%=@bio%>
+  </dd>
+
+  <dt>
+    Image
+  </dt>
+  <dd>
+    <img src="<%=@image%>" style="width:250px;">
+  </dd>
+
+  <dt>
+    Created at
+  </dt>
+  <dd>
+<%=@created_at%>  </dd>
+
+  <dt>
+    Updated at
+  </dt>
+  <dd>
+<%=@updated_at%>  </dd>
+</dl>
