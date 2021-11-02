@@ -49,3 +49,19 @@
   <dd>
 <%=@updated_at%>  </dd>
 </dl>
+
+<h2>Filmography</h2>
+
+<table border="1">
+<% @directed.all.each do |movie| %>
+
+  <tr>
+  <td> <%= movie.id %></td>
+  <td><img source = "<%= movie.image%>"></td>
+  <td> <%= movie.title%></td>
+  <td> <%= movie.year%></td>
+  <td> <a href="/movies/<%= movie.id %>">Show details</a></td>
+  </tr>
+<%end%>
+
+</table>

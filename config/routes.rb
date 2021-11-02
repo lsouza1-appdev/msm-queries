@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   get("/directors/youngest", { :controller => "directors", :action => "youngest" })
   get("/directors/:id", {:controller => "directors", :action => "dynamic_director"})
 
+  get("/movies", { :controller => "movies", :action => "movies_index"})
+
 
 end

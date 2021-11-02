@@ -38,6 +38,8 @@ class DirectorsController < ApplicationController
     @crated_at = @director.created_at
     @updated_at = @director.updated_at
     @image = @director.image
+
+    @directed = Movie.where({:director_id => @id})
     render({:template => "directors_template/dynamic_director.html.erb"})
   end 
     
